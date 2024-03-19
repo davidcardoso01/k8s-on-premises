@@ -18,3 +18,5 @@ Contém todos os scripts necessários para configurar um control plane e os work
 # 1-kong-gateway
 Contém todas as configurações necessárias para o kong gateway
 
+# 2-storage-class
+Contém todas as configurações necessárias para criar o Storage Class
