@@ -20,3 +20,6 @@ Contém todas as configurações necessárias para o kong gateway
 
 # 2-storage-class
 Contém todas as configurações necessárias para criar o Storage Class
+
+# 3-prometheus-stack
+Contém todas as configurações necessárias para configurar o prometheus e o grafana

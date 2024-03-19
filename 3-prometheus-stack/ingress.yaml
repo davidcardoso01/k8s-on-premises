@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: prometheus-grafana
+  namespace: monitoring
+  annotations:
+    konghq.com/preserve-host: "true"
+    konghq.com/override: prometheus-grafana #Vai usar a configuração generica criada no kongIngress abaixo (linha 22)
+spec:
+  ingressClassName: kong
+  rules:
+    - host: grafana.kubernetes.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: prometheus-grafana
+                port:
+                  number: 80
+---
+apiVersion: configuration.konghq.com/v1
+kind: KongIngress
+metadata:
+  name: prometheus-grafana
+  namespace: monitoring
+upstream:
+  host_header: prometheus-grafana.monitoring.svc
