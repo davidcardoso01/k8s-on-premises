@@ -1,0 +1,26 @@
+ingressController:
+  installCRDs: false
+
+serviceMonitor:
+  enabled: true
+  labels:
+    release: "promstack"
+
+env:
+  database: "off"
+  plugins: bundled
+
+admin:
+  enabled: true
+  http:
+    enabled: true
+  labels:
+    enable-metrics: "true"
+
+postgresql:
+  enabled: false
+
+podAnnotations:
+  prometheus.io/scrape: "true"
+  prometheus.io/port: "8100"
+

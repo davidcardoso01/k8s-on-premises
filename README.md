@@ -15,3 +15,6 @@ Contém todos os scripts necessários para configurar um control plane e os work
 * ## 0-hosts/3-worker
     Contém os scripts que configuram o worker do cluster.
 
+# 1-kong-gateway
+Contém todas as configurações necessárias para o kong gateway
+
