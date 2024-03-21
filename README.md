@@ -23,3 +23,6 @@ Contém todas as configurações necessárias para criar o Storage Class
 
 # 3-prometheus-stack
 Contém todas as configurações necessárias para configurar o prometheus e o grafana
+
+# Material completo:
+ https://medium.com/@davidcardoso01/kubernetes-criando-um-cluster-on-premises-a-partir-de-tr%C3%AAs-vms-1c9d705949f8
